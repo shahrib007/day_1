@@ -1,0 +1,64 @@
+Dart Assignment:1
+1)Real-world problems that can be solved using programming
+Ans-
+1:Banking: To calculate EMI on loan
+2:E-commerce: shoping cart
+3:Virtual Assistant:
+
+2)Difference between final and const
+final:
+Using final keyword we can declair vairable and latter we can inilize that vairable only once.
+final value is declair at runtime
+
+const:
+We have to declair and inilize vairable at a time of declariation ,we can not change value if we inilize variable same like final.
+Value is defined at complie time
+
+3)Calculate area of circle given radious
+Ans: in dartvoid main() {
+  double ans;
+  double areaOfCircle(double rad) {
+    double pi = 3.14;
+    ans = pi * rad * rad;
+    return ans;
+  } ;
+  double radious = 5;
+  print(areaOfCircle(radious));
+}
+
+4)Difference between for loop and while loop and sinario when to use
+Ans:
+for loop: when we know number of itaration in advance .eg generate a report for fixed number of employee
+
+While loop: when we dont know the number of itteration in advance
+eg: user login system user can not log in untill user not give correct id password
+
+Assignment 2:
+class Book {
+  // Properties
+  String title="";
+  String author="";
+  int yearPublished=0;
+
+  // Method to display book details
+  void displayDetails() {
+    print('Title= $title');
+    print('Author= $author');
+    print('Year Published= $yearPublished');
+  }
+}
+
+void main() {
+  // Creating an object of Book
+  Book book = Book();
+  book.title="Magic";
+  book.author="Unknown";
+  book.yearPublished=2000;
+
+  // Displaying book details
+  book.displayDetails();
+}
+
+
+
+
